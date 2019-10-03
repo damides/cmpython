@@ -38,7 +38,7 @@ def char_count(args):
         total_words = 0
         # Poulate dictionary
         for line in f:
-            line = line.lower().rstrip('\n')
+            line = line.lower()
             for ch in string.ascii_lowercase:
                 freq_table[ch] += line.count(ch)
             total_lines += 1
